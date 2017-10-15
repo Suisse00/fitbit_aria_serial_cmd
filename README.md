@@ -55,6 +55,8 @@ Know character availables :
     * )
 * lcdpat <hexa value from 0 up to FFFF> : Allow you to manually control some lcd segments
     * bit 1: display a "x" and refresh icon as well as the upper rounded bar (where pixels are alternatively on and off)
+    * bit 2 to 7 display one line of the text line (2 is the top line and 7 is the bottom line; where pixels are alternatively on and off in the same line)
+    * bit 8 Display the "wifi" icon, the no battery icon and the upper rounded bar (where pixels are alternatively on and off)
 * icon <0 from 16> specific led of the upper rounded bar to turn off. 
 0 hide the bar while 16 display it full
 * pbar <value between 0 up to 16> : Allow you to control the upper rounded bar (the bar use to display the progression when "thinking"). LCD will turn on from the left to right.
