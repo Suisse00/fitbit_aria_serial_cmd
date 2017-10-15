@@ -40,7 +40,6 @@ This documentation is based on manual tests and not by reverse engineering the f
 * hwrev  : Return the hardware version?
  * deviceid  : Return versions
 * bat  : Return battery informations
-* switchstate  :
 * lcdtext <text> : Display text on the screen (case sensitive)
 Know character availables :
     * a = display a checkbox
@@ -54,8 +53,9 @@ Know character availables :
     * ?
     * (
     * )
-* lcdpat <hexa value from 0 up to FFFF> : Allow you to manually control each pixel/icon of the LCD
-* icon <0 from 16> specific led of the upper rounded bar to turn off
+* lcdpat <hexa value from 0 up to FFFF> : Allow you to manually control some lcd segments
+    * bit 1: display a "x" and refresh icon as well as the upper rounded bar (where pixels are alternatively on and off)
+* icon <0 from 16> specific led of the upper rounded bar to turn off. 
 0 hide the bar while 16 display it full
 * pbar <value between 0 up to 16> : Allow you to control the upper rounded bar (the bar use to display the progression when "thinking"). LCD will turn on from the left to right.
 * pwm <value from 0 to 10> : control the brightness of the screen
